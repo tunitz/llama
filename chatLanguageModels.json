@@ -1,0 +1,19 @@
+[
+	{
+		"name": "llama",
+		"vendor": "customendpoint",
+		"apiKey": "${input:chat.lm.secret.591ace24}",
+		"apiType": "chat-completions",
+		"models": [
+			{
+				"id": "Qwen3.8-27B",
+				"name": "Qwen3.8-27B",
+				"url": "http://localhost:8080/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 49152,
+				"maxOutputTokens": 16384
+			}
+		]
+	}
+]
