@@ -1,0 +1,35 @@
+{
+  "providers": {
+    "llama-cpp": {
+      "baseUrl": "http://localhost:8080/v1",
+      "api": "openai-completions",
+      "apiKey": "llama-cpp",
+      "models": [
+        {
+          "id": "Qwen3.8-27B",
+          "name": "Qwen 3.8-27B (Llama)",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 65536,
+          "maxTokens": 16384
+        },
+        { 
+          "id": "Gemma-4-E4B",
+          "name": "Gemma-4-E4B (Llama)",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 65536,
+          "maxTokens": 8192
+        },
+        { 
+          "id": "Medgemma1.5-4B",
+          "name": "Medgemma1.5-4B (Llama)",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 16384,
+          "maxTokens": 4096
+        }
+      ]
+    }
+  }
+}
