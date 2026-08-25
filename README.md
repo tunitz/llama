@@ -33,6 +33,22 @@ llama-server --models-preset ./preset.ini --temp 0.1
 
 The server listens on `http://localhost:8080/v1` by default.
 
+### Bind address and port
+
+By default the server binds to `127.0.0.1` (local access only). Use `--port` to change the port and `--host` to bind to a different address:
+
+```sh
+# Different port
+llama-server --models-preset ./preset.ini --port 9090
+
+# Bind to all IPv4 interfaces (reachable from other machines on the network)
+llama-server --models-preset ./preset.ini --host 0.0.0.0 --port 9090
+```
+
+The flags work the same in single-model mode (`-hf ...`).
+
+> **Note:** if you change the port or bind address, update `baseUrl` in `models.json` to match (e.g. `http://192.168.1.10:9090/v1`). Binding to `0.0.0.0` exposes the server on your network — llama.cpp has no authentication by default, so protect it with `--api-key` or firewall rules on untrusted networks.
+
 ## Configuring pi
 
 Link the model config into pi (a symlink works, so this repo stays the single source of truth):
