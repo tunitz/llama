@@ -8,6 +8,7 @@ Local config for running LLMs with [llama.cpp](https://github.com/ggml-org/llama
 | --- | --- |
 | `preset.ini` | llama.cpp router-mode preset: one section per model profile (shared defaults in `[*]`, per-model overrides) |
 | `models.json` | pi custom-provider config: exposes the local llama.cpp server to pi |
+| `chatLanguageModels.json` | VS Code chat config: exposes the local llama.cpp server to VS Code chat as a custom endpoint |
 
 ## Running the llama.cpp preset
 
@@ -60,3 +61,15 @@ ln -s /path/to/llama/models.json ~/.pi/agent/models.json
 It registers a `llama-cpp` provider pointing at the local server (`http://localhost:8080/v1`, OpenAI-compatible API). Model `id`s must match the preset section names, so keep both files in sync when adding/removing models.
 
 Then start pi and select a model, e.g. `/model llama-cpp/Qwen3.8-27B`.
+
+## Configuring VS Code
+
+Link the chat config into VS Code (a symlink works, so this repo stays the single source of truth):
+
+```sh
+ln -s /path/to/llama/chatLanguageModels.json ~/.config/Code/User/chatLanguageModels.json
+```
+
+It registers a `llama` custom endpoint pointing at the local server (`http://localhost:8080/v1`, OpenAI-compatible chat completions API). Model `id`s must match the preset section names, so keep both files in sync when adding/removing models.
+
+Then select the model in the chat model picker (e.g. `llama/Qwen3.8-27B`). If you set an `--api-key` on the server, provide it via the referenced secret input (`chat.lm.secret.*`) in VS Code.
