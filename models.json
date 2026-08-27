@@ -13,7 +13,7 @@
           "maxTokens": 16384
         },
         {
-          "id": "Qwen3.8-27B:UD-IQ2_XXS",
+          "id": "Qwen3.8-27B:IQ2_XXS",
           "reasoning": true,
           "input": ["text", "image"],
           "contextWindow": 131072,

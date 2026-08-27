@@ -15,7 +15,7 @@
 				"maxOutputTokens": 16384
 			},
 			{
-				"id": "Qwen3.8-27B:UD-IQ2_XXS",
+				"id": "Qwen3.8-27B:IQ2_XXS",
 				"name": "Qwen3.8-27B:UD-IQ2_XXS",
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
