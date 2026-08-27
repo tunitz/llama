@@ -7,7 +7,7 @@
 		"models": [
 			{
 				"id": "Qwen3.8-27B:Q4_0",
-				"name": "Qwen3.8-27B",
+				"name": "Qwen3.8-27B:Q4_0",
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
@@ -16,7 +16,7 @@
 			},
 			{
 				"id": "Qwen3.8-27B:IQ2_XXS",
-				"name": "Qwen3.8-27B:UD-IQ2_XXS",
+				"name": "Qwen3.8-27B:IQ2_XXS",
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
@@ -24,8 +24,8 @@
 				"maxOutputTokens": 16384
 			},
 			{
-				"id": "Qwen3.8-Flash-Next:UD-Q4_K_XL",
-				"name": "Qwen3.8-Flash-Next:UD-Q4_K_XL",
+				"id": "Qwen3.8-Flash-Next:Q4_K_XL",
+				"name": "Qwen3.8-Flash-Next:Q4_K_XL",
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,

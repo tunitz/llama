@@ -20,7 +20,7 @@
           "maxTokens": 16384
         },
         {
-          "id": "Qwen3.8-Flash-Next:UD-Q4_K_XL",
+          "id": "Qwen3.8-Flash-Next:Q4_K_XL",
           "reasoning": true,
           "input": ["text", "image"],
           "contextWindow": 131072,
