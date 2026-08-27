@@ -9,7 +9,7 @@
           "id": "Qwen3.8-27B:Q4_0",
           "reasoning": true,
           "input": ["text", "image"],
-          "contextWindow": 131072,
+          "contextWindow": 65536,
           "maxTokens": 16384
         },
         {

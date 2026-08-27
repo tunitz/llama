@@ -11,8 +11,8 @@
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
-				"maxInputTokens": 98304,
-				"maxOutputTokens": 32768
+				"maxInputTokens": 49152,
+				"maxOutputTokens": 16384
 			},
 			{
 				"id": "Qwen3.8-27B:IQ2_XXS",
