@@ -17,7 +17,7 @@
           "reasoning": true,
           "input": ["text", "image"],
           "contextWindow": 131072,
-          "maxTokens": 16384
+          "maxTokens": 32768
         },
         {
           "id": "Qwen3.8-Flash-Next:Q4_K_XL",

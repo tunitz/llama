@@ -20,8 +20,8 @@
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
-				"maxInputTokens": 114688,
-				"maxOutputTokens": 16384
+				"maxInputTokens": 98304,
+				"maxOutputTokens": 32768
 			},
 			{
 				"id": "Qwen3.8-Flash-Next:Q4_K_XL",
