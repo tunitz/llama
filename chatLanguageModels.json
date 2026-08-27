@@ -13,6 +13,15 @@
 				"vision": true,
 				"maxInputTokens": 114688,
 				"maxOutputTokens": 16384
+			},
+			{
+				"id": "Qwen3.8-Flash-Next",
+				"name": "Qwen3.8-Flash-Next",
+				"url": "http://localhost:8080/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 114688,
+				"maxOutputTokens": 16384
 			}
 		]
 	}
