@@ -11,7 +11,7 @@
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
-				"maxInputTokens": 49152,
+				"maxInputTokens": 114688,
 				"maxOutputTokens": 16384
 			}
 		]
