@@ -6,11 +6,24 @@
       "apiKey": "llama-cpp",
       "models": [
         {
-          "id": "Qwen3.8-27B",
-          "name": "Qwen 3.8-27B (Llama)",
+          "id": "Qwen3.8-27B:Q4_0",
           "reasoning": true,
           "input": ["text", "image"],
-          "contextWindow": 65536,
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        },
+        {
+          "id": "Qwen3.8-27B:UD-IQ2_XXS",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 131072,
+          "maxTokens": 16384
+        },
+        {
+          "id": "Qwen3.8-Flash-Next:UD-Q4_K_XL",
+          "reasoning": true,
+          "input": ["text", "image"],
+          "contextWindow": 131072,
           "maxTokens": 16384
         }
       ]
