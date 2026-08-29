@@ -6,6 +6,24 @@
 		"apiType": "chat-completions",
 		"models": [
 			{
+				"id": "Qwen3.8-27B:Q8_K_XL",
+				"name": "Qwen3.8-27B:Q8_K_XL",
+				"url": "http://localhost:8080/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 49152,
+				"maxOutputTokens": 16384
+			},
+			{
+				"id": "Qwen3.8-27B:Q4_K_XL",
+				"name": "Qwen3.8-27B:Q4_K_XL",
+				"url": "http://localhost:8080/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 49152,
+				"maxOutputTokens": 16384
+			},
+			{
 				"id": "Qwen3.8-27B:Q4_0",
 				"name": "Qwen3.8-27B:Q4_0",
 				"url": "http://localhost:8080/v1",
@@ -15,22 +33,22 @@
 				"maxOutputTokens": 16384
 			},
 			{
-				"id": "Qwen3.8-27B:IQ2_XXS",
-				"name": "Qwen3.8-27B:IQ2_XXS",
+				"id": "Qwen3.8-27B:IQ4_XS",
+				"name": "Qwen3.8-27B:IQ4_XS",
+				"url": "http://localhost:8080/v1",
+				"toolCalling": true,
+				"vision": true,
+				"maxInputTokens": 49152,
+				"maxOutputTokens": 16384
+			},
+			{
+				"id": "Qwen3.8-27B:Q2_K_XL",
+				"name": "Qwen3.8-27B:Q2_K_XL",
 				"url": "http://localhost:8080/v1",
 				"toolCalling": true,
 				"vision": true,
 				"maxInputTokens": 98304,
 				"maxOutputTokens": 32768
-			},
-			{
-				"id": "Qwen3.8-Flash-Next:Q4_K_XL",
-				"name": "Qwen3.8-Flash-Next:Q4_K_XL",
-				"url": "http://localhost:8080/v1",
-				"toolCalling": true,
-				"vision": true,
-				"maxInputTokens": 114688,
-				"maxOutputTokens": 16384
 			}
 		]
 	}
